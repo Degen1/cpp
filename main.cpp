@@ -1,19 +1,23 @@
-#include <iostream>   // For input and output
-
+#include <iostream>
 using namespace std;
 
 int main() {
-    // Print a message
-    cout << "Hello, World!" << endl;
+    int num1, num2;
 
-    // Variables
-    int a = 5;
-    int b = 3;
-    int sum = a + b;
+    // Ask the user
+    cout << "Enter first number: ";
+    cin >> num1;
 
-    // Show result
-    cout << "a = " << a << ", b = " << b << endl;
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    // Calculate
+    int sum = num1 + num2;
+    int product = num1 * num2;
+
+    // Show results
     cout << "Sum = " << sum << endl;
+    cout << "Product = " << product << endl;
 
-    return 0; // End program
+    return 0;
 }
