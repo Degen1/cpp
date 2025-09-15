@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/degengebre/Documents/cpp/main'
+binary-path:     '/Users/degengebre/Documents/GitHub/cpp/main'
 relocations:     []
 ...

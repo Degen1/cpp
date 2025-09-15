@@ -1,23 +1,24 @@
 #include <iostream>
 using namespace std;
 
+
 int main() {
-    int num1, num2;
+    
+int age;
 
-    // Ask the user
-    cout << "Enter first number: ";
-    cin >> num1;
+ cout << "enter you age: ";
+    cin >> age;
 
-    cout << "Enter second number: ";
-    cin >> num2;
+    if(age < 18) {
+        cout << "you are a minor";
+    } else if (age >18) {
+        cout << "you are an adult";
+    } else if (age == 18) {
+        cout << "welome to adulthood";
+    }
 
-    // Calculate
-    int sum = num1 + num2;
-    int product = num1 * num2;
 
-    // Show results
-    cout << "Sum = " << sum << endl;
-    cout << "Product = " << product << endl;
 
     return 0;
 }
+
