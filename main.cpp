@@ -4,20 +4,48 @@ using namespace std;
 
 int main() {
     
-int age;
+char op;
+double num1;
+double num2;
+double result;
 
- cout << "enter you age: ";
-    cin >> age;
+cout << "calculator" << endl;
+cout << "enter either (+, -, *, or /): ";
+cin >> op;
 
-    if(age < 18) {
-        cout << "you are a minor";
-    } else if (age >18) {
-        cout << "you are an adult";
-    } else if (age == 18) {
-        cout << "welome to adulthood";
-    }
+cout << "enter number 1: ";
+cin >> num1;
+
+cout << "enter number 2: ";
+cin >> num2;
+
+switch(op) {
+    case '+':   
+    result = num1 + num2;
+    cout << "result: " << result << endl;
+    break;
+
+    case '-':   
+    result = num1 - num2;
+    cout << "result: " << result << endl;
+    break;
+
+    case '*':   
+    result = num1 * num2;
+    cout << "result: " << result << endl;
+    break;
+
+    case '/':   
+    result = num1 / num2;
+    cout << "result: " << result << endl;
+    break;
+
+    default:
+    cout << " that wasnt a valid response" << endl;
+    break;
 
 
+}
 
     return 0;
 }
